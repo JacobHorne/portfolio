@@ -1,13 +1,14 @@
 <template>
   <div>
     <section class="buttons">
-        	<a href="http://jacobhorne.github.io/grok/index.html">Live Site</a>
-        	<a href="https://github.com/JacobHorne/grok_site">The Code</a>
+        	<a href="http://ccscable.com">Live Site</a>
+        	<a href="https://github.com/JacobHorne/ccs">The Code</a>
     </section>
 
 		<section class="main clearfix wrapper">
 			<section class="navigation">
             	<!--Main Navigation -->
+			
 			</section>
 
 

@@ -66,7 +66,7 @@ $purple:#2A1B6D;
 }
 
 .buttons {
-	opacity: 0;
+	opacity: 1;
 	transition: opacity 400ms ease-out;
 }
 
@@ -74,9 +74,8 @@ $purple:#2A1B6D;
 	opacity: 1;
 }
 
-body{
+p{
 	font-family: "Questrial", arial;
-	margin:0px;
 }
 img{
 	display:block;
@@ -85,11 +84,11 @@ h1{
 	font-family: "Questrial", arial;
 	text-shadow: 0.5px 0.5px #a39ea0;
 }
-h2{
+h2,h3,h4{
 	font-family: "Quicksand", arial;
 	text-shadow: 0.5px 0.5px #a39ea0;
+	margin:1em 0;
 }
-
 p{
 	font-size: 0.9em;
 	line-height: 1.4em;
@@ -102,8 +101,6 @@ p{
 	padding-top: 70px;
 	width:90%;
 	margin:0 auto;
-}
-ul{
 }
 a{
 	text-decoration: none;
@@ -160,19 +157,24 @@ a{
 .display-block{
 	padding-top: 100px 0px;
 	min-height:355px;
+	transition: ease all 0.6s;
+	margin:20px 0;
+	&:hover{
+			opacity:0.8;
+			transform: scale(1.05);
+		}
 	h2{
 		font-weight: 800;
+		margin:20px 0;
 	}
 	img{
 		width:95%;
 		max-width: 800px;
-		border:2px solid $grey;
-		border-radius:10px;
-		padding:5px;
-		transition: ease all 1.0s;
-		&:hover{
-			opacity:0.8;
-		}
+		border-radius:3px;
+		box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+		border:1px solid rgba(0,0,0,0.05);
+		
+		
 	}
 }
 .subpage-content{

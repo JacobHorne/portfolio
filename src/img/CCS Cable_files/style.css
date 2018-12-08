@@ -1,0 +1,363 @@
+/** Clearfix is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 15, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 17, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 21, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/** Menu Button Transition
+.lines {        
+    //create middle line
+    @include line;
+    position: relative;
+    /*create the upper and lower lines as pseudo-elements of the middle line
+    &:before, &:after {
+    
+     @include line;
+      position: absolute;
+      left:0;
+      content: '';
+      transform-origin: $button-size/14 center;
+    }
+    &:before { top: $button-size/4; }
+    &:after { top: -$button-size/4; }
+}
+
+@mixin line {
+	display: inline-block;
+	width: $button-size;
+	height: $button-size/7;
+	background: $color;
+	border-radius: $button-size/14; 
+	transition: $transition;
+}  
+
+.lines-button.x2 .lines{
+    transition: background .3s .6s ease;
+
+    &:before, &:after{
+    //set transform origin back to center
+    transform-origin: 50% 50%;
+    transition: top .3s .6s ease, transform .3s ease;
+    }
+}
+*/
+/** Generic Styles ***/
+/* line 68, ../scss/style.scss */
+body {
+  font-family: "Questrial", arial;
+}
+
+/* line 71, ../scss/style.scss */
+img {
+  display: block;
+  border-radius: 20px;
+}
+
+/* line 75, ../scss/style.scss */
+h1 {
+  font-family: "Questrial", arial;
+  text-shadow: 1px 0.5px #a39ea0;
+}
+
+/* line 79, ../scss/style.scss */
+h2 {
+  font-family: "Quicksand", arial;
+  text-shadow: 0.5px 0.5px #a39ea0;
+}
+
+/* line 86, ../scss/style.scss */
+p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+/* line 90, ../scss/style.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 96, ../scss/style.scss */
+a {
+  text-decoration: none;
+  color: #192740;
+}
+/* line 99, ../scss/style.scss */
+a:visited {
+  color: #192740;
+}
+
+/** Sites Styles ***/
+/* line 104, ../scss/style.scss */
+.navigation {
+  display: none;
+}
+
+/* line 107, ../scss/style.scss */
+.menu-icon {
+  display: block;
+  width: 100%;
+}
+/* line 111, ../scss/style.scss */
+.menu-icon img {
+  border-radius: 0px;
+  max-width: 30px;
+  float: right;
+}
+
+/* line 117, ../scss/style.scss */
+.module {
+  position: absolute;
+  background: #192740;
+  opacity: .9;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/* line 124, ../scss/style.scss */
+.module nav {
+  padding-top: 50px;
+}
+/* line 127, ../scss/style.scss */
+.module ul {
+  list-style: none;
+}
+/* line 130, ../scss/style.scss */
+.module li {
+  padding: 20px;
+}
+/* line 133, ../scss/style.scss */
+.module a {
+  color: white;
+  padding: 40px;
+  font-size: 2.5em;
+}
+
+/* line 141, ../scss/style.scss */
+.title h1 {
+  padding: 5%;
+  margin: 0;
+  font-size: 2.7em;
+  text-align: center;
+  color: #192740;
+}
+/* line 148, ../scss/style.scss */
+.title h2 {
+  text-align: center;
+  padding: 0px 2%;
+  text-align: center;
+}
+
+/* line 154, ../scss/style.scss */
+.display-block {
+  padding-top: 100px 0px;
+}
+/* line 156, ../scss/style.scss */
+.display-block h2 {
+  font-weight: 800;
+}
+/* line 159, ../scss/style.scss */
+.display-block img {
+  width: 95%;
+  max-width: 800px;
+  border: 2px solid #dad4d4;
+  opacity: 0.9;
+  padding: 5px;
+}
+/* line 165, ../scss/style.scss */
+.display-block img:hover {
+  opacity: 1;
+}
+
+/* line 171, ../scss/style.scss */
+.subpage-content h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 40px 0px;
+}
+/* line 176, ../scss/style.scss */
+.subpage-content h2 {
+  text-align: center;
+}
+/* line 179, ../scss/style.scss */
+.subpage-content h3 {
+  text-align: center;
+  margin-bottom: 25px 0px;
+  font-weight: 900;
+}
+/* line 184, ../scss/style.scss */
+.subpage-content p {
+  text-align: center;
+}
+/* line 187, ../scss/style.scss */
+.subpage-content ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+/* line 195, ../scss/style.scss */
+.subpage-content img {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 5% 0;
+  border-radius: 10px;
+}
+
+/* line 206, ../scss/style.scss */
+.col2 p {
+  text-align: center;
+}
+
+/* line 211, ../scss/style.scss */
+.col3 h4 {
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  /* line 218, ../scss/style.scss */
+  button {
+    display: none;
+  }
+
+  /* line 221, ../scss/style.scss */
+  .menu-icon {
+    display: none;
+  }
+
+  /* line 224, ../scss/style.scss */
+  .navigation {
+    display: block;
+    margin: 20px;
+  }
+  /* line 229, ../scss/style.scss */
+  .navigation ul {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+  }
+  /* line 234, ../scss/style.scss */
+  .navigation li {
+    display: inline-block;
+    padding: 2px;
+    font-size: 1em;
+    text-align: center;
+    margin: 4px;
+  }
+  /* line 241, ../scss/style.scss */
+  .navigation a {
+    display: block;
+    font-weight: 900;
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: #192740;
+    padding: 10px;
+  }
+  /* line 248, ../scss/style.scss */
+  .navigation a:hover {
+    border: 1px solid #192740;
+    border-radius: 10px;
+    margin: 0 -1px;
+  }
+
+  /* line 257, ../scss/style.scss */
+  .title h1 {
+    padding: 2%;
+    margin: 0;
+  }
+
+  /* line 263, ../scss/style.scss */
+  .subpage-content h1 {
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+  }
+  /* line 268, ../scss/style.scss */
+  .subpage-content h2 {
+    text-align: center;
+  }
+  /* line 271, ../scss/style.scss */
+  .subpage-content h3 {
+    text-align: left;
+    margin-bottom: 25px 0px;
+  }
+  /* line 275, ../scss/style.scss */
+  .subpage-content p {
+    text-align: left;
+  }
+  /* line 278, ../scss/style.scss */
+  .subpage-content ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+  /* line 283, ../scss/style.scss */
+  .subpage-content li {
+    padding-left: 5px;
+    margin: 0px;
+    text-align: left;
+    font-size: .5;
+  }
+  /* line 291, ../scss/style.scss */
+  .subpage-content a {
+    display: inline-block;
+    padding: 0px 2%;
+  }
+
+  /* line 298, ../scss/style.scss */
+  .display-block {
+    width: 48%;
+    margin-left: 1%;
+    display: inline-block;
+  }
+  /* line 302, ../scss/style.scss */
+  .display-block h2 {
+    text-align: center;
+  }
+
+  /* line 306, ../scss/style.scss */
+  .col2 {
+    margin: 0 auto;
+  }
+  /* line 308, ../scss/style.scss */
+  .col2 div {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+    padding: 20px 5%;
+  }
+  /* line 314, ../scss/style.scss */
+  .col2 img {
+    display: inline-block;
+    margin-left: 2%;
+  }
+
+  /* line 319, ../scss/style.scss */
+  .col3 {
+    text-align: center;
+  }
+  /* line 321, ../scss/style.scss */
+  .col3 div {
+    display: inline-block;
+    vertical-align: top;
+    width: 19%;
+    margin: 0px 4%;
+  }
+  /* line 327, ../scss/style.scss */
+  .col3 h4 {
+    text-align: left;
+    line-height: 0em;
+    font-weight: 300;
+  }
+}

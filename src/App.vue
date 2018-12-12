@@ -5,9 +5,9 @@
 			<nav>
 			<ul>
 				<li><router-link to="/">Home</router-link></li>
-				<li><router-link to="/about">About</router-link></li>
-				<li><router-link to="/contact">Contact</router-link></li>
-				<li><router-link to="/resume">Resume</router-link></li>
+				<li><a href='http://jacobhorne.github.io/about.html'>About</a></li>
+				<li><a href="http://jacobhorne.github.io/contact.html">Contact</a></li>
+				<li><router-link to="/about">Resume</router-link></li>
 			</ul>
 			</nav>
 		</div>
@@ -16,7 +16,6 @@
 		</section>
 	</div>
 		<router-view/>
-	
 	</div>
 </template>
 
@@ -50,7 +49,7 @@ $purple:#2A1B6D;
 	a{
 		display:block;
 		padding:10px;
-		border:1.5px solid #182b66;
+		border:1px solid lightgrey;;
 		border-radius:10px;
 		font-family: "Questrial", arial;
 		background-color:white;
@@ -82,11 +81,11 @@ img{
 }
 h1{
 	font-family: "Questrial", arial;
-	text-shadow: 0.5px 0.5px #a39ea0;
+	
 }
 h2,h3,h4{
 	font-family: "Quicksand", arial;
-	text-shadow: 0.5px 0.5px #a39ea0;
+	
 	margin:1em 0;
 }
 p{
@@ -153,9 +152,13 @@ a{
 .title{
 	display:none;
 }
-
+.doc-image{
+	box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+	border:1px solid whitesmoke;
+	margin:2em 0;
+}
 .display-block{
-	padding-top: 100px 0px;
+	padding:1.4em 0;
 	min-height:355px;
 	transition: ease all 0.6s;
 	margin:20px 0;
@@ -173,8 +176,6 @@ a{
 		border-radius:3px;
 		box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
 		border:1px solid rgba(0,0,0,0.05);
-		
-		
 	}
 }
 .subpage-content{

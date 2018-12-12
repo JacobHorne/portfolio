@@ -5,8 +5,9 @@ import About from './views/About.vue'
 import Contact from './views/Contact.vue'
 import Resume from './views/Resume.vue'
 import Grok from './views/Grok.vue'
-import Grokdoc from './views/Grokdoc.vue'
 import Ccs from './views/Ccs.vue'
+import Fadoc from './views/Fadoc.vue'
+import Zverse from './views/Zverse.vue'
 
 Vue.use(Router)
 
@@ -45,9 +46,14 @@ export default new Router({
       component: Ccs
     },
     {
-      path: '/grokdoc',
-      name: 'Grokdoc',
-      component: Grokdoc
+      path: '/fadoc',
+      name: 'Fadoc',
+      component: Fadoc
+    },
+    {
+      path: '/Zverse',
+      name: 'Zverse',
+      component: Zverse
     }
   ]
 })
